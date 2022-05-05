@@ -31,4 +31,8 @@ cp -r stateful-firewall/ %{buildroot}%{examplesroot}
 cp -r traffic-filter/ %{buildroot}%{examplesroot}
 
 %files
-%{examplesroot}/*.p4
+%{examplesroot}/arp_icmp/*
+%{examplesroot}/calc/*
+%{examplesroot}/l2switch/*
+%{examplesroot}/stateful-firewall/*
+%{examplesroot}/traffic-filter/*
