@@ -28,6 +28,7 @@ cp -r l2switch/ %{buildroot}%{examplesroot}
 cp -r stateful_firewall/ %{buildroot}%{examplesroot}
 cp -r traffic_filter/ %{buildroot}%{examplesroot}
 cp -r basic_mirror/ %{buildroot}%{examplesroot}
+cp -r reflector/ %{buildroot}%{examplesroot}
 
 %files
 %{examplesroot}/arp_icmp/*
@@ -36,3 +37,4 @@ cp -r basic_mirror/ %{buildroot}%{examplesroot}
 %{examplesroot}/stateful_firewall/*
 %{examplesroot}/traffic_filter/*
 %{examplesroot}/basic_mirror/*
+%{examplesroot}/reflector/*
