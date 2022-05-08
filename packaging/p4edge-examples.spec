@@ -25,14 +25,14 @@ mkdir -p %{buildroot}%{examplesroot}
 cp -r arp_icmp/ %{buildroot}%{examplesroot}
 cp -r calc/ %{buildroot}%{examplesroot}
 cp -r l2switch/ %{buildroot}%{examplesroot}
-cp -r stateful-firewall/ %{buildroot}%{examplesroot}
-cp -r traffic-filter/ %{buildroot}%{examplesroot}
+cp -r stateful_firewall/ %{buildroot}%{examplesroot}
+cp -r traffic_filter/ %{buildroot}%{examplesroot}
 cp -r basic_mirror/ %{buildroot}%{examplesroot}
 
 %files
 %{examplesroot}/arp_icmp/*
 %{examplesroot}/calc/*
 %{examplesroot}/l2switch/*
-%{examplesroot}/stateful-firewall/*
-%{examplesroot}/traffic-filter/*
+%{examplesroot}/stateful_firewall/*
+%{examplesroot}/traffic_filter/*
 %{examplesroot}/basic_mirror/*
