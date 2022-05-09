@@ -6,7 +6,6 @@ Summary:        P4Edge examples
 License:        Apache 2.0
 URL:            https://github.com/p4edge/examples
 Source0:        %{name}-%{version}.tar.gz
-BuildArch:      noarch
 Packager:       Dávid Kis <kidraai@.inf.elte.hu>
 
 %description
@@ -29,6 +28,11 @@ cp -r stateful_firewall/ %{buildroot}%{examplesroot}
 cp -r traffic_filter/ %{buildroot}%{examplesroot}
 cp -r basic_mirror/ %{buildroot}%{examplesroot}
 cp -r reflector/ %{buildroot}%{examplesroot}
+%ifarch arm64
+cp pi-examples.cfg %{buildroot}%{examplesroot}
+%else
+cp apu-examples.cfg %{buildroot}%{examplesroot}
+%endif
 
 %files
 %{examplesroot}/arp_icmp/*
@@ -38,3 +42,4 @@ cp -r reflector/ %{buildroot}%{examplesroot}
 %{examplesroot}/traffic_filter/*
 %{examplesroot}/basic_mirror/*
 %{examplesroot}/reflector/*
+%{examplesroot}/*.cfg
